@@ -6,7 +6,7 @@ st.set_page_config(page_title="IBM Watson AI Chat", layout="centered")
 st.title("💬 Welcome to IBM AI Agent")
 
 # ✅ Hardcoded credentials
-API_KEY = "IiumMgNOHUYl3I9zktEbsImClBanax7K8bXSRhsZWtS2"
+API_KEY = "Fk7n9-XR7UoWxUWiOaLcfvL6tyW7I8uWlqjG9Z6b-7HA"
 ROLE = "user"  # Change to "Admin" or "system" if needed
 
 # Text input for user message
