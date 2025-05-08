@@ -47,12 +47,14 @@ if st.button("🚀 Submit to IBM Watson"):
             try:
                 result = response_scoring.json()
                 st.success("✅ Response from IBM Watson:")
-                try:
-    messages = result.get("messages", [])
-    if messages:
-        for msg in messages:
-            st.write(f"{msg.get('role', 'AI').capitalize()}: {msg.get('content', '')}")
-    else:
-        st.write("No messages received from the AI.")
-except Exception as e:
-    st.error(f"⚠️ Failed to extract message content: {e}")
+                st.json(result)
+            except ValueError:
+                st.error("❌ Could not parse JSON.")
+                st.text(response_scoring.text)
+            except Exception as e:
+                st.error(f"⚠️ Unexpected error: {e}")
+
+        except requests.exceptions.RequestException as e:
+            st.error(f"🔌 Network error: {e}")
+        except Exception as e:
+            st.error(f"⚠️ Error: {e}")
