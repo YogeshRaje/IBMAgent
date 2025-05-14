@@ -7,7 +7,7 @@ st.set_page_config(page_title="Smartest AI Nutrition Assistant", layout="centere
 st.title("The Smartest AI Nutrition Assistant")
 
 # IBM Cloud API Key
-API_KEY = "LTxz3YZ5y_6Hv1nyPvrgUqzawDSlEjUgNkcxQJJuRbwE"
+API_KEY = "tB39_-D8nWIzySoLEsZZUEVVCxohViPa8pkTBhPyycPO"
 ROLE = "user"
 
 # Input area
