@@ -40,7 +40,7 @@ if st.button(" Submit"):
 
             with st.spinner("Sending request to IBM Watson..."):
                 response_scoring = requests.post(
-                    'https://eu-de.ml.cloud.ibm.com/ml/v4/deployments/224b60a0-1a71-44ff-8a09-c6af388d9182/ai_service?version=2021-05-01',
+                    'https://eu-de.ml.cloud.ibm.com/ml/v4/deployments/d1b177f7-8823-4cc4-a936-6d3fbe1237ec/ai_service?version=2021-05-01',
                     json=payload_scoring,
                     headers=headers
                 )
